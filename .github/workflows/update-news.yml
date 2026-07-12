@@ -35,6 +35,12 @@ jobs:
         run: |
           git config user.name "nexus-news-bot"
           git config user.email "actions@users.noreply.github.com"
+          # Re-sync to the current tip of main before committing, in case another run
+          # (e.g. schedule + manual dispatch firing close together) pushed in the
+          # meantime. --mixed keeps our freshly-fetched news.json in the working tree
+          # while moving the branch pointer, so we always commit on top of the latest.
+          git fetch origin main
+          git reset --mixed origin/main
           git add news.json
           git diff --cached --quiet || git commit -m "Update news feed"
-          git push
+          git push origin HEAD:main
