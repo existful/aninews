@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus — Gaming & Anime News</title>
+  <meta name="description" content="Live gaming, anime, deals and trailer news in one dashboard." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">◈</span>
+      <div class="brand-text">
+        <h1>NEXUS</h1>
+        <p>Gaming &amp; Anime News Feed</p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input id="search" type="search" placeholder="Search headlines…" autocomplete="off" aria-label="Search headlines" />
+      </div>
+      <button id="refresh" class="refresh-btn" title="Refresh feeds">
+        <span class="refresh-icon">⟳</span><span class="refresh-label">Refresh</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="tabs" class="tabs" aria-label="Categories"><!-- tabs injected by app.js --></nav>
+
+  <div id="ad-banner" class="ad-banner"><!-- banner ad injected by app.js --></div>
+
+  <div id="status" class="status-bar" aria-live="polite"></div>
+
+  <main>
+    <section id="grid" class="grid" aria-live="polite"><!-- cards injected by app.js --></section>
+    <div id="empty" class="empty hidden">No stories match your search.</div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Live public RSS feeds · no tracking · edit <code>feeds.js</code> to customize sources</span>
+  </footer>
+
+  <script src="feeds.js"></script>
+  <script src="ads.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
