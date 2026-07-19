@@ -17,7 +17,7 @@
   ];
   const FETCH_TIMEOUT_MS = 9000;   // fail fast on dead proxies
   const CONCURRENCY = 4;           // limit parallel requests so proxies don't rate-limit us
-  const CACHE_KEY = "nexus_news_cache_v1";
+  const CACHE_KEY = "aninews_cache_v1";
   const CACHE_TTL_MS = 15 * 60 * 1000;   // 15 minutes
   const AUTO_REFRESH_MS = 15 * 60 * 1000;
   const PER_FEED_MAX = 20;               // cap items per feed
