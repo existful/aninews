@@ -12,7 +12,7 @@ const PER_FEED_MAX = 25;
 const CONCURRENCY = 6;
 const TIMEOUT_MS = 15000;
 const OUTPUT_PATH = path.join(__dirname, "..", "news.json");
-const USER_AGENT = "Mozilla/5.0 (compatible; NexusNewsBot/1.0; +https://github.com/nexusganf/nexus-dashboard)";
+const USER_AGENT = "Mozilla/5.0 (compatible; AniNewsBot/1.0; +https://github.com/existful/aninews)";
 
 // ---- tiny regex-based RSS/Atom parser (no DOM available in Node) ----------------
 
