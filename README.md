@@ -1,4 +1,4 @@
-# NETCITY — Anime News Dashboard
+# UNRESTRICTED — Anime News Dashboard
 
 A single-page, live news dashboard for anime fans. It aggregates **anime & manga** from free public RSS feeds 
 — no API keys, no accounts, no backend.
